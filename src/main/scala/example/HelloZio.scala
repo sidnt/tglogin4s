@@ -10,9 +10,7 @@ object HelloZio extends App {
 
   val program =
     for {
-      _ <- putStrLn("Hello! What is your name?")
-      n <- getStrLn
-      _ <- putStrLn(s"Hello " + n + ", welcome to ZIO!")
+      _ <- putStrLn("Hello! Welcome to Zio!")
     } yield ()
 
 }

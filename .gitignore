@@ -2,3 +2,4 @@ target/
 .bloop
 .metals
 .idea
+.DS_Store

@@ -6,9 +6,13 @@ ThisBuild / organization     := "com.example"
 ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
+  .enablePlugins(ScalaJSPlugin, WorkbenchPlugin)
   .settings(
     name := "tglogin4s",
     libraryDependencies ++= Seq(
-      zio
+      "dev.zio" %%% "zio" % "1.0.0-RC9"
     )
+  )
+  .settings(
+    scalaJSUseMainModuleInitializer := true
   )
